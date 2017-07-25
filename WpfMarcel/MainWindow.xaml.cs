@@ -20,9 +20,17 @@ namespace WpfMarcel
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Data data;
         public MainWindow()
         {
             InitializeComponent();
+            data = new Data();
+            this.DataContext = data;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("A: " + data.A + "B: " + data.B);
         }
     }
 }

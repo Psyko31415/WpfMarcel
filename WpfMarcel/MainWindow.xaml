@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <DockPanel>
+            <TextBox Name="Abox" Text="{Binding Path=A}" DockPanel.Dock="Left" Width="100"></TextBox>
+            <TextBox Name="Bbox" Text="{Binding Path=B}" DockPanel.Dock="Left" Width="100"></TextBox>
+            <Button Click="Button_Click" DockPanel.Dock="Right">Click plzz</Button>
+        </DockPanel>
     </Grid>
 </Window>
